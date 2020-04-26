@@ -90,7 +90,7 @@ if __name__ == "__main__" :
     #
     upload_document_handler = MessageHandler(
         upload_document_f,
-        filters=Filters.command(["upload"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["upload@t4download_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(upload_document_handler)
 
